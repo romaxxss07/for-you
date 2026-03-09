@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>R & A | Наша История</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;600&family=Neucha&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div id="auth-screen" class="screen">
+        <div class="glass-card">
+            <div class="header-logo-container">
+                <span class="logo-4">4</span>
+                <span class="logo-u">u</span>
+            </div>
+            <p class="sub-header-text">еще 1 маленький подарок</p>
+            
+            <p class="hint-text">Введите дату нашего знакомства и дни рождения</p>
+            
+            <div class="input-container">
+                <input type="text" id="passwordInput" placeholder="00 00 00" inputmode="numeric">
+            </div>
+            
+            <button onclick="checkPassword()">Открыть письмо</button>
+            <p id="error-msg" class="error-text" style="display: none;">Попробуй еще раз, любимая ❤️</p>
+        </div>
+    </div>
+
+    <div id="main-content" class="screen hidden">
+        <header>
+            <h1 class="logo">R & A</h1>
+            <div class="counter" id="love-counter">Загрузка времени...</div>
+        </header>
+
+        <main class="scroll-container">
+            <section class="card fade-in">
+                <span class="date-tag">Апрель 2024</span>
+                <h3>Начало нашей Вселенной</h3>
+                <p>В тот весенний день мир еще не знал, что родилась новая история. Апрель 2024 года подарил мне встречу, которая перевернула всё мое представление о счастье. Ты вошла в мою жизнь тихо, но стала в ней самым громким и прекрасным звуком.</p>
+            </section>
+
+            <section class="card fade-in">
+                <span class="date-tag">22 Декабря 2024</span>
+                <h3>Решение быть рядом</h3>
+                <p>С этой даты я выбрал тебя осознанно. Мы прошли через тишину, через дни, когда не общались, и через моменты, когда казалось, что всё сложно. Но судьба раз за разом возвращала нас в одну точку. Это доказало: ты — не случайность, ты — судьба.</p>
+            </section>
+
+            <section class="card pink-glow fade-in">
+                <h3>Твоя бесконечная доброта</h3>
+                <p>Знаешь, я часто думаю о том, как мне повезло. Чтобы я ни делал, какие бы ошибки ни совершал, ты всегда находила в своем сердце место для прощения. Твоё терпение — это мой главный жизненный урок. Я бесконечно благодарен тебе за то, что ты никогда не опускала руки и продолжала верить в «нас».</p>
+            </section>
+
+            <section class="card fade-in">
+                <h3>Мой безопасный остров</h3>
+                <p>С тобой мне невероятно комфортно. Весь мир знает меня как серьезного человека, но только ты видишь меня настоящим. С тобой я могу дурачиться, шутить и чувствовать себя тем самым маленьким ребенком, которому не нужно ничего доказывать. Твои объятия — это единственное место, где я чувствую себя по-настоящему дома.</p>
+            </section>
+
+            <section class="card fade-in">
+                <h3>Я люблю тебя</h3>
+                <p>Я полюбил в тебе всё: то, как ты смотришь, как улыбаешься и как поддерживаешь меня в самые трудные минуты. Ты — мой свет, мой уют и мой смысл. Впереди у нас еще бесконечное количество дней, и я хочу каждый из них провести, делая тебя счастливой.</p>
+                <p class="quote">"Ты — лучшее, что случилось со мной за все эти 2 года."</p>
+                <p class="signature-text">Твой R ❤️</p>
+            </section>
+
+            <section class="card fade-in video-section">
+                <h3>Момент для тебя</h3>
+                <video id="ourVideo" controls>
+                    <source src="assets/WhatsApp Video 2026-03-09 at 05.07.31.mp4" type="video/mp4">
+                    Ваш браузер не поддерживает видео.
+                </video>
+            </section>
+        </main>
+    </div>
+
+    <audio id="bgMusic" loop>
+        <source src="assets/The Police - Every Breath You Take.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
