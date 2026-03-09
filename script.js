@@ -52,3 +52,23 @@ if (passInput) {
         }
     });
 }
+
+// Получаем элементы аудио и видео
+const bgMusic = document.getElementById('bgMusic');
+const ourVideo = document.getElementById('ourVideo');
+
+// Когда видео начинает играть, можно приглушить фоновую музыку (по желанию)
+ourVideo.onplay = function() {
+    bgMusic.volume = 0.2; // Делаем тише, чтобы слышать видео
+};
+
+// Когда видео ставится на паузу или заканчивается — возвращаем музыку
+ourVideo.onpause = function() {
+    bgMusic.play();
+    bgMusic.volume = 1.0; // Возвращаем громкость
+};
+
+ourVideo.onended = function() {
+    bgMusic.play();
+    bgMusic.volume = 1.0;
+};
